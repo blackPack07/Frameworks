@@ -1,0 +1,9 @@
+# --- Core Performance Engine ---
+locust==2.33.0
+
+# --- Security & Utilities ---
+cryptography==44.0.0
+
+# --- Code Quality & Linting (Senior Engineer Pleasers) ---
+flake8==7.0.0
+black==24.3.0

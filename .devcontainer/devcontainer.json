@@ -1,0 +1,44 @@
+{
+  "name": "Unified QA Automation & Performance Workspace",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11-bookworm",
+  
+  // Installs additional platform runtimes dynamically via open-source Features
+  "features": {
+    "ghcr.io/devcontainers/features/node:2": {
+      "version": "20"
+    }
+  },
+
+  // Auto-configures specialized extensions for anyone opening the repository
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "christian-kohler.path-intellisense",
+        "esbenp.prettier-vscode",
+        "ms-python.black-formatter"
+      ],
+      "settings": {
+        "python.formatting.provider": "none",
+        "editor.formatOnSave": true,
+        "[python]": {
+          "editor.defaultFormatter": "ms-python.black-formatter",
+          "editor.formatOnSave": true
+        }
+      }
+    }
+  },
+
+  // Automates port forwarding so the Locust Web UI displays natively 
+  "forwardPorts": [8089],
+  "portsAttributes": {
+    "8089": {
+      "label": "Locust Web Dashboard",
+      "onAutoForward": "openBrowserOnce"
+    }
+  },
+
+  // Automatically runs immediately after the environment finishes compiling
+  "postCreateCommand": "pip install -r performance-locust/requirements.txt"
+}
