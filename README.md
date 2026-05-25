@@ -1,4 +1,4 @@
-# 🚀 Multi-Tool Test Automation & Performance Engineering Portfolio
+# 🚀 Unified Test Automation & Performance Engineering Portfolio
 
 ## 📌 Overview
 Welcome to my centralized test engineering portfolio. This repository serves as a showcase of production-ready test automation and performance testing frameworks that I have built. Coming from a functional UI and API automation background, this project documents my journey in mastering diverse testing methodologies, setting up quality gates, establishing performance SLAs, and generating stakeholder-friendly metrics.
@@ -27,4 +27,4 @@ The repository is modularly structured by tool. Each directory contains self-con
 
 ---
 ## 📄 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [Copyright (c) 2026 Gautam Kanojia] licence for more details in 'MIT License tab'.
