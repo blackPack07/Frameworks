@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    
+    {
+      "name": "🚀 Launch Locust Web UI",
+      "type": "node",
+      "request": "launch",
+      "program": "locust",
+      "args": [
+        "-f", "${workspaceFolder}/performance-locust/locustfile.py"
+      ],
+      "console": "integratedTerminal"
+    }
+  ]
+}
